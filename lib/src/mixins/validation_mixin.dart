@@ -3,13 +3,13 @@ class LoginScreenMixin {
     if (!value.contains('@gmail.com')) {
       return 'Please enter valid email address';
     }
-    
+    return null;
   }
 
   String validatePassword(value) {
     if (!(value.length >= 4) || !(value.length <= 22)) {
       return 'Password length must be in between 4 to 22 characters';
     }
-    
+    return null;
   }
 }
